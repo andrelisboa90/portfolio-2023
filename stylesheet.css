@@ -472,4 +472,12 @@ button:hover, button:focus, button:active {
 	h3{
 		zoom: 0.5;
 	}
+	.proj-1{
+		background-color: #E2F6FE;
+		background-image: none;
+	}
+	.proj-2{
+		background-color: #F9F5ED;
+		background-image: none;
+	}
 }
