@@ -12,6 +12,9 @@ section,
 summary {
     display: block;
 }
+::selection {
+	background-color: var(--color-selection);
+  }
 p{
 	line-height: 1.8;
 	margin: 0;
@@ -216,6 +219,7 @@ body {
 	color: var(--color-text);
 	background-color: #fff;
 	background-color: var(--color-bg);
+	--color-selection: #d0c5eb;
 	
 }
 
