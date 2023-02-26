@@ -207,20 +207,17 @@ table {
 
 body {
 	--color-text: #313131;
-    --color-bg: #faf8ff;
-    --color-link: #5718eb;
-    --color-link-hover: #175eec;
+    --color-bg: #fffff8;
+    --color-link: #630cb5;
+    --color-link-hover: #400477;
     --color-info: #313131;
-    --grid-item-bg: #eaf1ff;
-    --color-close:  #5718eb;
+    --grid-item-bg: #e3d9fa;
+    --color-close:  #630cb5;
+	--color-selection: #d0c5eb;
 	font-family: Futura, "futura-pt", sans-serif;
 	min-height: 100vh;
-	color: #57585c;
 	color: var(--color-text);
-	background-color: #fff;
 	background-color: var(--color-bg);
-	--color-selection: #d0c5eb;
-	
 }
 
 /* Page Loader */
@@ -660,7 +657,6 @@ button:hover, button:focus, button:active {
 	font-weight: 400;
 	line-height: 200%;
 	width: 100%;
-	color: #313131;
 	animation: slideDown 1.2s ease-in-out;
 }
 .hero__img{
