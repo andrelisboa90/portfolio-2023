@@ -236,26 +236,30 @@ body {
 }
 
 .js .loading::after {
-	content: '';
+	content: url(../img/rotacao-loading.svg);
 	position: fixed;
 	z-index: 100000;
-	top: 50%;
-	left: 50%;
-	width: 60px;
-	height: 60px;
-	margin: -30px 0 0 -30px;
+	top: 25%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	width: 158px;
+	height: 158px;
 	pointer-events: none;
 	border-radius: 50%;
 	opacity: 0.4;
-	background: var(--color-link);
-	animation: loaderAnim 0.7s linear infinite alternate forwards;
+	animation: loaderAnim 0.7s infinite;
+	transform-origin: center center;
+	margin: 0;
+	padding: 0;
 }
 
 @keyframes loaderAnim {
-	to {
-		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
-	}
+	from {
+		transform: rotate(0deg);
+	  }
+	  to {
+		transform: rotate(360deg);
+	  }
 }
 
 a {
