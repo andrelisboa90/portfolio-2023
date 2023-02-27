@@ -58,6 +58,7 @@ h2{
 }
 h3{
 	font-size: 1em;
+	font-weight: 700 !important;
 }
 abbr[title] {
     border-bottom: 1px dotted;
@@ -313,10 +314,11 @@ main {
 
 .codrops-header__title {
 	font-size: 1rem;
-	font-weight: normal;
+	font-weight: 400;
 	margin: 0;
 	padding: 0;
 	margin-left: 2em;
+	font-family: 'Montserrat';
 }
 
 .info {
