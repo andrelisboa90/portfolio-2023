@@ -809,6 +809,7 @@ button:hover, button:focus, button:active {
 }
 .text__curs{
 	text-decoration: underline;
+	font-weight: 700;
 }
 
 /* Efeito da imagem */
