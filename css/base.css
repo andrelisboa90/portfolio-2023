@@ -988,6 +988,9 @@ button:hover, button:focus, button:active {
 		width: fit-content;
 		margin-bottom: 1em;
 	}
+	.js .loading::after {
+		left: 30%;
+	}
 }
 @media (max-width: 500px) {
 	.hero__title{
