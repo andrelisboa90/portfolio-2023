@@ -875,7 +875,7 @@ button:hover, button:focus, button:active {
 		align-items: center;
 		text-align: left;
 	}
-	.codrops-links {
+	.codrop-links__bottom {
 		margin-bottom: 2em;
 	}
 	.title {
