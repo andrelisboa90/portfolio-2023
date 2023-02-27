@@ -47,11 +47,10 @@ a:hover {
     outline: 0;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     margin: 0.67em 0;
 	line-height: 0;
 	font-weight: 700 !important;
-	font-family: 'Raleway', sans-serif;
 }
 h2{
 	font-size: 1.5em !important;
@@ -631,6 +630,7 @@ main {
 }
 .hero__subtitle{
 	animation: slideDown 1.8s ease-in-out;
+	font-size: 1.5em;
 }
 .title__last-name, .hero__subtitle{
 	padding-left: 120px;
