@@ -209,6 +209,7 @@ table {
 body {
 	--color-text: #313131;
     --color-bg: #f5f5e5;
+	--color-dots:#f2f2d9;
     --color-link: #630cb5;
     --color-link-hover: #3d10d2;
     --color-info: #313131;
@@ -219,6 +220,8 @@ body {
 	min-height: 100vh;
 	color: var(--color-text);
 	background-color: var(--color-bg);
+	background-image: linear-gradient(to left, var(--color-dots) 1px, transparent 3px);
+	background-size: 120px 12px;
 }
 
 /* Page Loader */
