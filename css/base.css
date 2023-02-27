@@ -652,6 +652,7 @@ main {
 }
 .btn__header{
 	margin-left: 1em;
+	gap: 8px;
 }
 .floating__btn-mobile{
 	display: none;
