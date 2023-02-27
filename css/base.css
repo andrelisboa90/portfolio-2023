@@ -780,6 +780,7 @@ button:hover, button:focus, button:active {
 }
 .number__03{
 	animation: slideDown 2.0s ease-in-out;
+	margin-bottom: 32px;
 }
 
 /* Área de cursos */
