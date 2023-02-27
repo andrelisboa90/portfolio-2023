@@ -50,9 +50,11 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 	line-height: 0;
+	font-weight: 700 !important;
+	font-family: 'Raleway', sans-serif;
 }
 h2{
-	font-size: 1.5em;
+	font-size: 1.5em !important;
 }
 h3{
 	font-size: 1em;
@@ -62,7 +64,7 @@ abbr[title] {
 }
 b,
 strong {
-    font-weight: bold;
+    font-weight: 700;
 }
 dfn {
     font-style: italic;
@@ -140,12 +142,12 @@ button{
 	background-color: var(--color-bg);
 	stroke: var(--color-link);
 	border: 2px solid var(--color-link);
-	padding: 8px 12px;
+	padding: 12px 12px;
 	transition: transform 0.3s ease-in-out;
 	color: var(--color-link);
 	display: flex;
 	flex-direction: row;
-	font-weight: 800;
+	font-weight: 700 !important;
 	font-size: 16px;
 	border-radius: 32px;
     align-items: center;
@@ -204,7 +206,6 @@ table {
 *::before {
 	box-sizing: border-box;
 }
-
 body {
 	--color-text: #313131;
     --color-bg: #f5f5e5;
@@ -214,7 +215,7 @@ body {
     --grid-item-bg: #e3d9fa;
     --color-close:  #630cb5;
 	--color-selection: #d0c5eb;
-	font-family: Futura, "futura-pt", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	min-height: 100vh;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -443,7 +444,7 @@ main {
 }
 
 .grid__item-number {
-	font-weight: bold;
+	font-weight: 700;
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -658,15 +659,17 @@ button:hover, button:focus, button:active {
 	font-size: 14px;
 }
 .btn__primary{
+	background-color:#ffffff;
+}
+.btn__primary:hover{
 	background-color: var(--color-link);
 	color: var(--color-bg);
-	font-weight: 500;
 }
 .hero__text{
 	font-size: 1rem;
 	margin: 0;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
 	line-height: 200%;
 	width: 100%;
 	animation: slideDown 1.2s ease-in-out;
