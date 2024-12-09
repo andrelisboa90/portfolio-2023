@@ -767,18 +767,25 @@ button:hover, button:focus, button:active {
 .grid5{
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: stretch;
 	padding: 0px;
-	gap: 24px;
+	gap: 32px;
 	justify-content: space-between;
 
 }
 .grid6{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 8px;
+	align-items: stretch;
+	width: 100%;
+	gap: 16px;
+}
+.icon-espec{
+	margin-left: 0;
+    margin-right: auto;
+	padding: 12px;
+	background-color: var(--grid-item-bg);
+	border-radius: 50%;
 }
 .number__01{
 	animation: slideDown 1.6s ease-in-out;
