@@ -154,7 +154,7 @@ button{
 	gap:0;
 }
 button:hover{
-	border-color: var(--color-link-hover);
+	border-color: var(--color-link);
 	color: var(--color-link-hover);
 }
 button,
