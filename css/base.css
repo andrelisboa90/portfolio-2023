@@ -782,10 +782,11 @@ button:hover, button:focus, button:active {
 }
 .icon-espec{
 	margin-left: 0;
-    margin-right: auto;
+    	margin-right: auto;
 	padding: 12px;
 	background-color: var(--grid-item-bg);
 	border-radius: 50%;
+	width: 52px;
 }
 .number__01{
 	animation: slideDown 1.6s ease-in-out;
