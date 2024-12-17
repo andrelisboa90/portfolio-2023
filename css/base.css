@@ -371,7 +371,7 @@ main {
 
 .grid-wrap {
 	position: relative;
-	max-width: 1200px;
+	max-width: 1224px;
 	margin: 0 auto;
 	padding: 6rem 1rem 0;
 }
@@ -932,7 +932,7 @@ button:hover, button:focus, button:active {
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1224px) {
 	.grid__hero{
 		flex-direction: column;
 		width: 100%;
