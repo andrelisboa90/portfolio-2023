@@ -1,4 +1,4 @@
-// import { preloadImages } from '../utils.js';
+import { preloadImages } from 'C:\Users\andre.lisboa\Downloads\StickySections-main\StickySections-main\img';
 
 // Variable to store the Lenis smooth scrolling object
 let lenis;
