@@ -373,7 +373,7 @@ main {
 	position: relative;
 	max-width: 1224px;
 	margin: 0 auto;
-	padding: 6rem 1rem 0;
+	padding: 6rem 0 0;
 }
 
 .wrap2{
@@ -799,6 +799,83 @@ button:hover, button:focus, button:active {
 }
 .area-title{
 	animation: slideDown 0.8s ease-in-out;
+}
+
+/* Área de projetos novo */
+.grid-proj{
+	width: 598px;
+	height: 340px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	position: relative;
+	align-items: center;
+	transition: 0.5s ease-in-out;
+}
+.grid-proj2{
+	padding: 24px 0 0;
+}
+.proj1{
+	background-color: #00A9EA;
+}
+.proj2{
+	background-color: #EFBEA5;
+}
+.proj3{
+	background-color: #E8F3FF;
+}
+.proj4{
+	background-color: #F8F8F8;
+}
+.img-proj{
+	width: 262px;
+	height: 340px;
+	z-index: 1;
+	margin-left: 16px;
+ 	transition: 0.5s ease-in-out;
+}
+.vetor-proj{
+	z-index: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+ 	transition: 0.5s ease-in-out;
+}
+.proj-text{
+	z-index: 1;
+    margin-left: 32px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.proj-title{
+	font-size: 36px;
+	display: flex;
+	flex-direction: row;
+ 	transition: 0.5s ease-in-out;
+ 	color: var(--color-text);
+}
+.grid-proj:hover{
+	-webkit-transform: translateX(8px);
+	 transform: translateX(8px);
+	 scale: 1.02;	
+}
+.img-proj:hover{
+	-webkit-transform: translateX(8px);
+	 transform: translateX(8px);
+	 scale: 1.05;	
+}
+.grid-proj:hover .vetor-proj{
+	-webkit-transform: translateX(-52px);
+	 transform: translateX(-52px);
+	 -webkit-transform: translateY(8px);
+	 transform: translateY(8px);
+	 scale: 1.3;
+}
+.proj-title:hover{
+	-webkit-transform: translateX(8px);
+	 transform: translateX(8px);
 }
 
 /* Área de cursos */
