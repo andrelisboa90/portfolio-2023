@@ -225,10 +225,6 @@ body {
 	background-image: linear-gradient(to left, var(--color-dots) 1px, transparent 3px);
 	background-size: 120px 12px;
 }
-.yowza{
-	--color-bg: #F3F5FB;
-	--color-dots: #ECF0FC;
-}
 
 /* Page Loader */
 .js .loading::before {
@@ -600,6 +596,17 @@ main {
 
 /* Conteúdo interno */
 
+
+.yowza{
+	--color-bg: #F3F5FB;
+	--color-dots: #ECF0FC;
+}
+
+.greenhouse{
+	--color-bg: #FFFAEE;
+	--color-dots: #FFF3D8;
+}
+
 .hero_project_title{
 		font-size: 52px;
 		line-height: 1.6;
@@ -624,7 +631,10 @@ main {
     	animation: slideDown 2s ease-in-out;
 	}
 	.yowza_hero_project_img{
-		background-image: url("img/yowzah-hero-2.png");
+		background-image: url("../img/yowzah-hero-2.png");
+	}
+	.greenhouse_hero_project_img{
+		background-image: url("../img/greenhouse-hero-2.png");
 	}
 	.hero_img_over{
 		height: 378px;
