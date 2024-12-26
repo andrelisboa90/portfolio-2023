@@ -763,7 +763,8 @@ main {
 	position: fixed;
 	bottom: 32px;
 	right: 32px;
-	animation: easeFrame 1.4s ease-in-out;   
+	animation: easeFrame 1.4s ease-in-out;
+	z-index: 2;   
 }
 .btn__header-mobile{
 	display: none;
