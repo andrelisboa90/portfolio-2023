@@ -19,7 +19,7 @@ p{
 	line-height: 1.8;
 	margin: 0;
 }
-audio,
+audio,content__close
 canvas,
 video {
     display: inline-block;
@@ -53,11 +53,13 @@ h1 {
 	font-weight: 700 !important;
 }
 h2{
-	font-size: 1.5em !important;
+	font-size: 2em !important;
+	margin: 0;
 }
 h3{
 	font-size: 1em;
 	font-weight: 700 !important;
+	margin: 0;
 }
 abbr[title] {
     border-bottom: 1px dotted;
@@ -154,7 +156,7 @@ button{
 	gap:0;
 }
 button:hover{
-	border-color: var(--color-link);
+	border-color: var(--color-link-hover);
 	color: var(--color-link-hover);
 }
 button,
@@ -213,7 +215,7 @@ body {
     --color-link: #630cb5;
     --color-link-hover: #3d10d2;
     --color-info: #313131;
-    --grid-item-bg: #e3d9fa;
+    --grid-item-bg: #DAE3FF;
     --color-close:  #630cb5;
 	--color-selection: #d0c5eb;
 	font-family: 'Montserrat', sans-serif;
@@ -222,6 +224,10 @@ body {
 	background-color: var(--color-bg);
 	background-image: linear-gradient(to left, var(--color-dots) 1px, transparent 3px);
 	background-size: 120px 12px;
+}
+.yowza{
+	--color-bg: #F3F5FB;
+	--color-dots: #ECF0FC;
 }
 
 /* Page Loader */
@@ -493,13 +499,15 @@ main {
 .js .content__item--current {
 	height: auto;
 	opacity: 1;
-	padding: 3rem 5vw 10rem;
+	padding: 0;
 	pointer-events: auto;
 }
 
 .content__item-intro {
 	position: relative;
-	display: flex;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 100%;
 	align-items: center;
 }
 
@@ -508,7 +516,7 @@ main {
 	height: auto;
 	max-width: 100%;
 	display: block;
-	margin: 0 24px;
+	margin: 0 auto;
 	grid-area: 1 / 1 / 1 / 1;
 }
 
@@ -518,7 +526,7 @@ main {
 
 .content__item-title {
 	position: relative;
-	font-size: 7vw;
+	font-size: 7em !important;
 	line-height: 1;
 	text-align: center;
 	margin: 0;
@@ -534,21 +542,15 @@ main {
 
 .content__item-subtitle {
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: normal;
 	margin: 3rem auto;
-}
-.item__button{
-	border-radius: 32px;
-	border-width: 2px;
-	border-color: var(--color-link);
 }
 
 .content__item-text {
 	text-align: justify;
 	max-width: 800px;
 	margin: 0 auto;
-	opacity: 0 !important;
 }
 
 .content__item-text p {
@@ -556,18 +558,19 @@ main {
 }
 
 .content__close {
-	position: absolute;
+	position: fixed;
 	top: 0.75rem;
-	left: 50%;
+	left: 90%;
 	z-index: 10000;
 	transform: translateX(-50%);
-	background: none;
+	background: #ffffff;
 	border: 0;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
 	color: var(--color-text);
-	font-size: 1.5rem;
+	font-size: 1em;
+	padding:12px;
 }
 
 .content__close:focus {
@@ -592,6 +595,121 @@ main {
 .content__indicator {
 	opacity: 0;
 }
+/* Conteúdo interno */
+
+/*
+.content__grid-hor{
+	display: flex;
+	flex-direction: row;
+	column-gap: 1.5em;
+	align-items: center;
+	width: 100%;
+}
+.content__grid-vert{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	align-items: flex-start;
+	width: 100%;
+}
+.grid__tag{
+	column-gap: 0.5em !important;
+}
+.content__image-grid{
+ 	background-position: center center;
+  	background-size: contain;
+	background-repeat: no-repeat;
+}
+.content__mockup__01{
+	background-image: url("../img/yowza-mockup-01.png");
+	width: 100%;
+	height: 34em;
+	background-repeat: repeat !important;
+}
+.content__grid-wrap{
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.text__large{
+	font-weight: 400;
+	font-size: 1.5em;
+	line-height: 1.6;
+	width: 60%
+}
+.item__graph{
+    padding: 1.5em 1.5em;
+    border-radius: 1em;
+    background-color: var(--color-bg);
+    width: 100%;
+    color: var(--color-text);
+}
+.subtitle__graph{
+	width: 13em;
+	text-align: right;
+}
+.graph__bar{
+	height: 2.5em;
+}
+.graph__bar-yowza01{
+	background-color: #BCBC5E;
+	width: 70%;
+}
+.graph__bar-yowza02{
+	background-color: var(--color-link-hover);
+	width: 15%;
+}
+.graph__bar-yowza03{
+	background-color: #9B7CFF;
+	width: 10%;
+}
+.graph__bar-yowza04{
+	background-color: var(--color-text);
+	width: 05%;
+}
+.graph__bar-yowza05{
+	background-color: var(--color-text);
+	width: 30%;
+}
+.graph__bar-yowza06{
+	background-color:#9B7CFF;
+	width: 45%;
+}
+.graph__bar-yowza07{
+	background-color: var(--color-link-hover);
+	width: 05%;
+}
+.graph__bar-yowza08{
+	background-color: #BCBC5E;
+	width: 20%;
+}
+.yowza05-02{
+	width: 10%;
+}
+.yowza06-02{
+	width: 15%;
+}
+.yowza08-02{
+	width: 70%;
+}
+.grid__total{
+	width: 100%;
+	background-color: var(--color-text);
+	color: white;
+	margin: 0;
+	margin-top: 3em;
+	padding: 2em 0;
+	z-index: 1;
+}
+.grid__yowza{
+	background-color: #382774;
+}
+
+
+
+*/
+
+
 
 
 /* Área de hero */
@@ -604,6 +722,7 @@ main {
 	align-items: flex-start;
 	padding: 0px;
 	gap: 24px;
+	width: 1224px;
 	margin: auto;
 }
 .hero__infos{
@@ -611,7 +730,7 @@ main {
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 0;
-	gap: 32px;
+	gap: 24px;
 }
 .hero__title{
 	display: flex;
@@ -768,24 +887,16 @@ button:hover, button:focus, button:active {
 	flex-direction: row;
 	align-items: stretch;
 	padding: 0px;
-	gap: 32px;
+	gap: 24px;
 	justify-content: space-between;
-
+	position: relative;
 }
 .grid6{
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	width: 100%;
-	gap: 16px;
-}
-.icon-espec{
-	margin-left: 0;
-    	margin-right: auto;
-	padding: 12px;
-	background-color: var(--grid-item-bg);
-	border-radius: 50%;
-	width: 52px;
+  	width: 100%;
+  	margin-bottom: 32px;
 }
 .number__01{
 	animation: slideDown 1.6s ease-in-out;
@@ -799,7 +910,29 @@ button:hover, button:focus, button:active {
 }
 .area-title{
 	animation: slideDown 0.8s ease-in-out;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
+
+/* Área de especializações */
+.grid__item-espec{
+	background-color: #ffffff;
+	align-items: stretch;
+  	width: 100%;
+  	padding: 24px;
+  	gap: 16px;
+}
+.icon-espec{
+	padding: 12px;
+	background-color: var(--grid-item-bg);
+	border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    margin-bottom: 24px;	
+}
+
+
 
 /* Área de projetos novo */
 .grid-proj{
@@ -991,10 +1124,10 @@ button:hover, button:focus, button:active {
 		margin-left: -0.25rem;
 	}
 	.content__item-subtitle {
-		font-size: 3vw;
+		font-size: 2em;
 	}
 	.content__item-text {
-  		column-count: 2;
+  		column-count: 1;
   		column-gap: 20px;
   	}
 	.content__item-img {
@@ -1004,7 +1137,7 @@ button:hover, button:focus, button:active {
 	.content__item-subtitle {
 		max-width: 100%;
 	}
-	.content__indicator {
+	.grid__totalndicator {
 		display: block;
 	}
 }
