@@ -622,8 +622,8 @@ main {
 		height: 424px;
 		margin: 0;
 		margin-top: 54px;
-	 	background-size:     cover;
-		background-repeat:   no-repeat;
+	 	background-size: cover;
+		background-repeat: no-repeat;
     	background-position: center top;
     	display: flex;
     	justify-content: center;
@@ -632,6 +632,7 @@ main {
 	}
 	.yowza_hero_project_img{
 		background-image: url("../img/yowzah-hero-2.png");
+
 	}
 	.greenhouse_hero_project_img{
 		background-image: url("../img/greenhouse-hero-2.png");
