@@ -606,7 +606,10 @@ main {
 	--color-bg: #FFFAEE;
 	--color-dots: #FFF3D8;
 }
-
+.super{
+	--color-bg: #FFEEDF;
+	--color-dots: #F9E2CF;
+}
 .hero_project_title{
 		font-size: 52px;
 		line-height: 1.6;
@@ -636,6 +639,9 @@ main {
 	}
 	.greenhouse_hero_project_img{
 		background-image: url("../img/greenhouse-hero-2.png");
+	}
+	.super_hero_project_img{
+		background-image: url("../img/super-hero-2.png");
 	}
 	.hero_img_over{
 		height: 378px;
