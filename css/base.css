@@ -610,6 +610,10 @@ main {
 	--color-bg: #FFEEDF;
 	--color-dots: #F9E2CF;
 }
+.idds{
+	--color-bg: #EDEDED;
+	--color-dots: #DFDFDF;
+}
 .hero_project_title{
 		font-size: 52px;
 		line-height: 1.6;
@@ -642,6 +646,9 @@ main {
 	}
 	.super_hero_project_img{
 		background-image: url("../img/super-hero-2.png");
+	}
+		.idds_hero_project_img{
+		background-image: url("../img/idds-hero-2.png");
 	}
 	.hero_img_over{
 		height: 378px;
