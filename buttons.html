@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground de Botões - Animações</title>
+
+  <!-- Import da fonte Outfit (usada no seu body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. FONTES & VARIÁVEIS DO PROJETO
+       ========================================================================== */
+    @font-face {
+      font-family: "Galgo";
+      src: url("../fonts/Galgo-Light.woff") format("woff");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Galgo";
+      src: url("../fonts/Galgo-Regular.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Galgo";
+      src: url("../fonts/Galgo-Bold.woff") format("woff");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --bg-color: #151419;
+      --text-color: #f5eed7;
+      --primary-color: #ffd95b;
+      --secondary-color: #e2e8f0;
+      --white: #ffffff;
+      --bg-soft: #0E0D0F;
+      --selection: #260b52;
+      --site-width: 1224px;
+      --grid-columns: 12;
+      --gutter: 24px;
+      --col-width: 80px;
+    }
+
+    /* ==========================================================================
+       2. RESTART & BASE
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::selection {
+      background-color: var(--selection);
+    }
+
+    body {
+      font-family: "Outfit", Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background: var(--bg-color);
+      min-height: 100vh;
+      
+      /* Centraliza o conteúdo na tela */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Galgo", Georgia, serif;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    /* Base Genérica de Botão */
+    button {
+        pointer-events: auto;
+        cursor: pointer;
+        background: var(--primary-color);
+        border: none;
+        padding: 16px;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        display: inline-block;
+        border-radius: 2px;
+        color: var(--bg-color);
+        border: 2px solid var(--primary-color);
+
+        
+    }
+
+    .btn-secondary {
+      background: var(--bg-soft);
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
+    }
+
+    /* ==========================================================================
+       3. ESTRUTURA DO PLAYGROUND
+       ========================================================================== */
+    .playground {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      padding: 40px;
+      background: var(--bg-soft);
+      border: 1px solid rgba(245, 238, 215, 0.1);
+      border-radius: 8px;
+    }
+
+    /* ==========================================================================
+       4. TESTES DE ANIMAÇÃO DE HOVER (ESCREVA SEUS EFEITOS AQUI)
+       ========================================================================== */
+
+    /* --- Botão 1: Exemplo de Efeito --- */
+    .btn-effect-1 {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, color 0.3s ease;
+      z-index: 1;
+    }
+
+    .btn-effect-1::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--text-color);
+      transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+      z-index: -1;
+    }
+
+    .btn-effect-1:hover {
+      color: var(--bg-color);
+      transform: translateY(-2px);
+    }
+
+    .btn-effect-1:hover::before {
+      transform: translateX(100%);
+    }
+
+    /* --- Botão 2: Exemplo de Efeito Secondary --- */
+    .btn-effect-2 {
+      position: relative;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+
+    .btn-effect-2:hover {
+      background: var(--primary-color);
+      color: var(--bg-color);
+      border-color: var(--primary-color);
+      box-shadow: 0 0 20px rgba(255, 217, 91, 0.3);
+    }
+
+/* ==========================================================================
+   EFEITO 2: HYPERION COMPLETO (Com deslize de fundo da direita -> esquerda)
+   ========================================================================== */
+.btn-hyperion {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid var(--primary-color);
+  
+  /* Animação de escala do botão inteiro */
+  transition: transform 0.3s cubic-bezier(0.1, 0.1, 0.3, 0.1);
+}
+
+/* 1. CAMADA DE FUNDO (Desliza da direita para a esquerda) */
+.btn-hyperion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-soft);
+  color: var(--text-color);
+  z-index: -1;
+  /* Inicia deslocada 100% para a direita */
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* 2. TEXTO INICIAL */
+.btn-hyperion > span {
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.3, 1), 
+              opacity 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* 3. TEXTO SECUNDÁRIO (Vem de baixo) */
+.btn-hyperion::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 0;
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.3, 1), 
+              opacity 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* ================= HOVER ================= */
+
+/* Leve pulso/escala do botão */
+.btn-hyperion:hover {
+    border-color: var(--text-color);
+    transform: scale3d(1.01, 1.01, 1);
+}
+
+/* A cor de fundo desliza para a posição normal (0,0) */
+.btn-hyperion:hover::before {
+  transform: translate3d(0, 0, 0);
+}
+
+/* O texto original sobe e esconde */
+.btn-hyperion:hover > span {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+/* O novo texto sobe e se alinha no centro */
+.btn-hyperion:hover::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+ /* ==========================================================================
+   EFEITO 2: HYPERION (Tympanus) FIM
+   ========================================================================== */
+  </style>
+</head>
+<body>
+
+  <h4>Testes de Hover</h4>
+  
+  <div class="playground">
+    <!-- Botão 1 -->
+    <button class="btn-effect-1">
+      <span>Subscribe</span>
+    </button>
+
+  <!-- Botão 2 -->
+    <button class="btn-hyperion" data-text="Explore project">
+        <span>Explore project</span>
+    </button>
+  </div>
+
+</body>
+</html>
