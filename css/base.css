@@ -38,7 +38,7 @@
   --gutter: 24px;
   --col-width: 80px;
   --grid-track: calc(var(--col-width) + var(--gutter));
-  --grid-line-color: #2d2d2d;
+  --grid-line-color: #1a1a1a;
   --grid-line-thickness: 1px;
 }
 
