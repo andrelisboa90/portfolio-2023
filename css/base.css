@@ -211,6 +211,29 @@ h4{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.page-loader {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--bg-color);
+  z-index: 99999;
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+.page-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.page-loader .img__hero-rotate {
+  animation: none;
+}
+.page-loader .img__text-circle {
+  animation: rotate 10s linear infinite;
+}
 .logo-rotate{
     font-size: 2rem !important;
     font-weight: 700 !important;

@@ -124,4 +124,65 @@
 
     // Initialize hover effects on all elements with data-hover-img attribute
     [...document.querySelectorAll('a[data-hover-img]')].forEach(link => new HoverImageEffect(link));
+
+    const initPageLoader = () => {
+        const loader = document.getElementById('page-loader');
+        if (!loader) {
+            return;
+        }
+
+        const hideLoader = () => {
+            loader.classList.add('loaded');
+            window.setTimeout(() => {
+                if (loader.parentNode) {
+                    loader.parentNode.removeChild(loader);
+                }
+            }, 400);
+        };
+
+        const showLoader = () => {
+            loader.classList.remove('loaded');
+            loader.style.display = 'grid';
+        };
+
+        window.addEventListener('load', hideLoader);
+
+        document.addEventListener('click', (event) => {
+            const target = event.target.closest('a[href], button[onclick]');
+            if (!target) {
+                return;
+            }
+
+            if (target.matches('a[href]')) {
+                const href = target.getAttribute('href');
+                if (
+                    !href ||
+                    href.startsWith('#') ||
+                    href.startsWith('mailto:') ||
+                    href.startsWith('tel:') ||
+                    href.startsWith('http') ||
+                    target.target === '_blank'
+                ) {
+                    return;
+                }
+                showLoader();
+                return;
+            }
+
+            if (target.matches('button[onclick]')) {
+                const onclickValue = target.getAttribute('onclick');
+                const match = onclickValue && onclickValue.match(/window\.location\.href\s*=\s*['"]([^'"]+)['"]/);
+                if (match && match[1]) {
+                    const destination = match[1];
+                    if (!destination.startsWith('#') && !destination.startsWith('http')) {
+                        event.preventDefault();
+                        showLoader();
+                        window.location.href = destination;
+                    }
+                }
+            }
+        });
+    };
+
+    initPageLoader();
 })();
