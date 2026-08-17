@@ -32,7 +32,14 @@
         <meta name="author" content="André Lisboa" />
         <link rel="shortcut icon" href="favicon.ico">
     </head>
-    <body>
+    <body class="is-loading">
+        <div class="page-loader" id="page-loader" aria-live="polite" aria-label="Carregando página">
+            <div class="logo-wrapper logo-loader">
+                <img src="images/logo-circle.svg" alt="" class="logo-circle">
+                <img src="images/logo-center.svg" alt="AL Logo" class="logo-center">
+            </div>
+        </div>
+
         <div class="page-shell">
             <main>
                 <header class="header">
@@ -45,7 +52,7 @@
                                         <img src="images/logo-center.svg" alt="AL Logo" class="logo-center">
                                     </div>
                                 </a>
-                                <div class="header-links">                                    
+                                <div class="header-links links-top">                                    
                                     <a href="#projects"><p>Projects</p></a>
                                     <a href="#about"><p>About me</p></a>
                                     <a href="#classes"><p>Classes</p></a>
@@ -72,7 +79,7 @@
                     <div class="container">
                         <div class="grid">
                             <div class="col-8">
-                                <h1>Your UI/UX partner on <span class="text-brand">Upwork</span></h1>
+                                <h1 class="hero-text">Your UI/UX partner on <span class="text-brand">Upwork</span></h1>
                             </div>
                             <div class="col-4">
                                 <div class="logo-wrapper logo-wrapper-hero">
@@ -82,19 +89,19 @@
                             </div>
                             <!-- Stats -->
                             <div class="col-3 stat">
-                                <h3 class="stat-title"><span class="stat-number">10</span><span class="stat-symbol">+</span></h3>
+                                <h2 class="stat-title"><span class="stat-number">10</span><span class="stat-symbol">+</span></h2>
                                 <p>Years of experience</p>
                             </div>        
                             <div class="col-3 stat">
-                                <h3 class="stat-title"><span class="stat-number">30</span><span class="stat-symbol">+</span></h3>
+                                <h2 class="stat-title"><span class="stat-number">30</span><span class="stat-symbol">+</span></h2>
                                 <p>Digital products created</p>
                             </div>        
                             <div class="col-3 stat">
-                                <h3 class="stat-title"><span class="stat-number">15</span><span class="stat-symbol">+</span></h3>
+                                <h2 class="stat-title"><span class="stat-number">15</span><span class="stat-symbol">+</span></h2>
                                 <p>UI/UX courses created</p>
                             </div>
                             <div class="col-3 stat">
-                                <h3 class="stat-title"><span class="stat-number">50</span><span class="stat-symbol">k</span></h3>
+                                <h2 class="stat-title"><span class="stat-number">50</span><span class="stat-symbol">k</span></h2>
                                 <p>Students taught worldwide</p>
                             </div>
                         </div>
@@ -155,7 +162,7 @@
                                     <!-- 1. Imagem Clicável -->
                                     <a href="care.html" class="project-image-link">
                                         <div class="project-image care-image">
-                                           <!--   <img src="images/logo-care.png" alt="Care & Share Logo" class="care-logo"> -->
+                                           <img src="images/logo-care-mobile.svg" alt="YouCare Logo" class="care-logo-mobile">
                                             <img src="images/screens-care.png" alt="Care & Share Screens" class="care-screens">
                                         </div>
                                     </a>
@@ -350,8 +357,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 header-container">
-                                <div class="header-links">                                    
+                            <div class="col-12 header-container footer-container">
+                                <div class="header-links links-footer">                                    
                                     <a href="#projects"><p>Projects</p></a>
                                     <a href="#about"><p>About me</p></a>
                                     <a href="#classes"><p>Classes</p></a>
@@ -379,5 +386,20 @@
                 </footer>
             </main>
         </div>
+        <script>
+            window.addEventListener('load', function () {
+                const loader = document.getElementById('page-loader');
+                const body = document.body;
+
+                if (!loader) return;
+
+                body.classList.remove('is-loading');
+                loader.classList.add('is-hidden');
+
+                setTimeout(function () {
+                    loader.remove();
+                }, 450);
+            });
+        </script>
     </body>
 </html>
