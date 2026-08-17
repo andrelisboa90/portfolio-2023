@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+    <head>
+        <!-- ... outras tags ... -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- CDN do GSAP v2 (necessário para o TweenMax funcionar) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        
+        <!-- Seu JS com 'defer' para rodar só após a página carregar -->
+        <script src="js/hover-effect.js" defer></script>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>André Lisboa</title>
+        <meta name="description" content="Portfolio pessoal com foco em design digital, experiência de usuário e desenvolvimento front-end."/>
+        <meta name="keywords" content="portfolio, ui ux, design, front-end, desenvolvimento, branding"/>
+        <meta name="theme-color" content="#151419" />
+        <title>Portfolio 2026</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/base.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/charming/2.2.0/charming.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/styles.css" />
         <meta property="og:title" content="André Lisboa" />
         <meta property="og:description" content="UI/UX Design" />
         <meta property="og:image" content="https://andrelisboa.co/wpp.png">
@@ -24,289 +31,338 @@
         <meta name="keywords" content="andré lisboa, design, ui, ux, ui/ux, design system" />
         <meta name="author" content="André Lisboa" />
         <link rel="shortcut icon" href="favicon.ico">
-  </head>
-  <body>
-    <div id="page-loader" class="page-loader">
-      <div class="img__hero-rotate">
-        <div class="img__text-circle"></div>
-        <div class="img__hero-al"><p class="logo-rotate">AL</p></div>
-      </div>
-    </div>
-    <section class="project-header">
-    <div class="container">
-      <div class="grid">
-        
-        <!-- Coluna de 12 para controlar o alinhamento do botão -->
-        <div class="col-12 close-button-wrapper">
-          <a href="index.html" class="btn-close-ghost">
-            <span>Go back</span>
-            <!-- Ícone de X em SVG -->
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-    <main>
-    <section class>
-      <div class="container">
-        <div class="grid">
-          <!-- Hero title -->
-          <div class="col-12">
-            <h2 class="proj-title">Blizt</h2>
-            <div class="proj">
-              <img src="images/eua.svg" alt="USA" />
-              <p>
-                  &nbsp;&bull; Mobile App / Admin Web &nbsp;&bull; 2026
-              </p>
-            </div>
-            <div class="proj proj-buttons">
-              <button onclick="window.open('https://www.figma.com/design/wLKanE82f78ptLUwEzHNxk/Dizzr?node-id=18843-8048&t=ezvKHu7CB3I7Wf8X-1', '_blank')" class="btn-secondary btn-hyperion proj-button" data-text="Access Figma file">
-                <span>Access Figma file</span>
-              </button>
-            </div>
-            <div class="proj-hero">
-              <img src="images/dizzr/dizzr-1.png" alt="Blizt" />
-              <img src="images/dizzr/dizzr-2.png" alt="Blizt" />
-              <img src="images/dizzr/dizzr-3.png" alt="Blizt" />
-              <img src="images/dizzr/dizzr-4.png" alt="Blizt" />
-            </div>
-          </div>
-          <div class="col-1"></div>
-
-            <!-- Description -->
-            <div class="col-4"></div>
-            <div class="col-7">
-              <p class="description">
-                Blizt is a social network for polls. Users can publish open or pre-formatted polls to get fast feedback from the community, as well as share their opinions on various polls across their feed.
-              </p>
-            </div>
-            <div class="col-1"></div>
-        </div>
-      </div>
-    </section>
-
-
-        <section class="section">
-          <div class="container">
-            <div class="grid">
-              <div class="col-12">
-                <h3>User personas</h3>
-              </div>
-              <!-- Persona -->
-              <div class="col-12 persona">
-                <img src="images/persona-1.svg" alt="Persona" style="width: 82px; height: 82px;" />
-                <div class="col-4">
-                  <h4>Alex, 24</h4>
-                  <p><strong>The Casual Voter Looking for Quick Interaction</strong></p>
-                </div>
-              </div>
-              <div class="col-6">
-                <p class="persona-description">
-                  Alex uses social apps mainly during short breaks throughout the day. He prefers lightweight interactions instead of creating long-form content. Blizt allows him to participate instantly by voting on polls, discovering opinions, and feeling part of conversations without needing to post frequently.
-                </p>
-              </div>
-              <div class="col-6"></div>
-              
-              <!-- Persona -->
-              <div class="col-4"></div>
-              <div class="col-8 persona">
-                <img src="images/persona-2.svg" alt="Persona" style="width: 82px; height: 82px;" />
-                <div class="col-4">
-                  <h4>Maya, 29</h4>
-                  <p><strong>The Creator Using Polls to Engage an Audience</strong></p>
-                </div>
-              </div>
-              <div class="col-4"></div>
-              <div class="col-6">
-                <p class="persona-description">
-                  Maya enjoys sharing opinions and starting conversations online. Instead of traditional posts, she prefers interactive formats that generate immediate feedback. Blizt gives her a fast way to publish polls and view people responses in real time.
-                </p>
-              </div>
-              <div class="col-2"></div>
-
-              
-              <!-- Persona -->
-              <div class="col-12 persona">
-                <img src="images/persona-3.svg" alt="Persona" style="width: 82px; height: 82px;" />
-                <div class="col-4">
-                  <h4>Daniel, 21</h4>
-                  <p><strong>The Social Explorer Discovering Trends and People</strong></p>
-                </div>
-              </div>
-              <div class="col-6">
-                <p class="persona-description">
-                  Daniel enjoys discovering new perspectives and online communities. He uses Blizt to explore trending questions, find interesting creators, and shape his feed through interaction rather than algorithms alone.
-                </p>
-              </div>
-              <div class="col-6"></div>
-
-              <!-- Persona -->
-              <div class="col-4"></div>
-              <div class="col-8 persona">
-                <img src="images/persona-5.svg" alt="Persona" style="width: 82px; height: 82px;" />
-                <div class="col-4">
-                  <h4>Lucia, 27</h4>
-                  <p><strong>The Opinion Leader Building Personal Authority</strong></p>
-                </div>
-              </div>
-              <div class="col-4"></div>
-              <div class="col-6">
-                <p class="persona-description">
-                  Lucia enjoys expressing strong opinions and influencing discussions online. She doesn’t just consume content - she wants to shape conversations and become recognized inside communities. Blizt allows her to position herself as a reference by consistently creating engaging polls and attracting followers through participation.
-                </p>
-              </div>
-              <div class="col-2"></div>
-
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <div class="grid">
-              <div class="col-12">
-                <h3>Wireframes</h3>
-              </div>
-              <div class="col-12">
-                  <img src="images/dizzr/dizzr-wireframes.png" alt="Wireframes" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        
-
-        <section class="section">
-          <div class="container">
-            <div class="grid">
-              <div class="col-12">
-                <h3>High fidelities</h3>
-              </div>
-            </div>
-            <!-- Area -->
-            <div class="grid hifi-grid hifi-grid-first">            
-              <div class="col-8">
-                  <img src="images/dizzr/dizzr-hifi-1.png" alt="Hi Fidelities" />
-              </div>
-              <div class="col-4 hifi-text">
-                <div>
-                  <h4>Authentication</h4>
-                  <p>Users log in with their email and password to access the poll feed directly. Alternatively, they can sign up by providing their name, username, date of birth, email, and password.</p>
-                </div>              
-              </div>
-            </div>
-            <!-- Area -->
-            <div class="grid hifi-grid">            
-              <div class="col-4 hifi-text">
-                <div>
-                  <h4>Feed & Polls</h4>
-                  <p>Users can view the poll feed and quickly vote by simply clicking the image of their preferred option. Upon voting, the details and results for each option are revealed.</p>
-                </div>              
-              </div>
-              <div class="col-8">
-                  <img src="images/dizzr/dizzr-hifi-2.png" alt="Hi Fidelities"/>
-              </div>
-            </div>
-            <!-- Area -->
-            <div class="grid hifi-grid">            
-              <div class="col-8">
-                  <img src="images/dizzr/dizzr-hifi-3.png" alt="Hi Fidelities" />
-              </div>
-              <div class="col-4 hifi-text">
-                <div>
-                  <h4>Create poll</h4>
-                  <p>Users can create polls via the bottom navigation bar. They can select available presets and include images, as well as set the question, category, and options.</p>
-                </div>              
-              </div>
-            </div>
-            <!-- Area -->
-            <div class="grid hifi-grid">            
-              <div class="col-6 hifi-text">
-                <div>
-                  <h4>Admin web</h4>
-                  <p> Through the web admin dashboard, moderators can perform platform actions. It enables them to manage users, moderate content, access audit logs, and analyze app usage analytics.</p>
-                </div>              
-              </div>
-              <div class="col-6"></div>
-              <div class="col-12">
-                  <img src="images/dizzr/dizzr-hifi-4.png" alt="Hi Fidelities" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <div class="grid">
-              <div class="col-12">
-                <h3>Branding & Marketing assets</h3>
-              </div>
-              <div class="col-12 branding-grid">
-                  <img src="images/dizzr/dizzr-branding-1.png" alt="Branding & Marketing assets" />
-              </div>
-              <div class="col-12 branding-grid">
-                  <img src="images/dizzr/dizzr-branding-3.png" alt="Branding & Marketing assets" />
-              </div>
-              <div class="col-12 branding-grid">
-                  <img src="images/dizzr/dizzr-branding-4.png" alt="Branding & Marketing assets" />
-              </div>
-            </div>          
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <div class="grid">
-              <div class="col-12">
-                <h3>Prototype</h3>
-              </div>
-              <div class="col-12">
-                  <iframe style="width: 100%; height: 600px;" src="https://embed.figma.com/proto/wLKanE82f78ptLUwEzHNxk/Dizzr?node-id=18563-31328&viewport=3432%2C-7031%2C0.24&scaling=scale-down&content-scaling=fixed&starting-point-node-id=18563%3A31330&page-id=1%3A95&embed-host=share" allowfullscreen></iframe>
-              </div>
-            </div>          
-          </div>
-        </section>
-
-        <section class="section" id="footer">
-            <div class="container">
-                <div class="grid">
-                    <div class="col-12">
-                        <div class="img__hero-rotate">
-                            <div class="img__text-circle"></div>
-                            <div class="img__hero-al"><p class="logo-rotate">AL</p></div>
+    </head>
+    <body>
+        <div class="page-shell">
+            <main>
+                <header class="header">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12 header-container">
+                                <a href="index.html">
+                                    <div class="logo-wrapper">
+                                        <img src="images/logo-circle.svg" alt="" class="logo-circle">
+                                        <img src="images/logo-center.svg" alt="AL Logo" class="logo-center">
+                                    </div>
+                                </a>
+                                <div class="header-links">                                    
+                                    <a href="index.html#projects"><p>Projects</p></a>
+                                    <a href="index.html#about"><p>About me</p></a>
+                                    <a href="index.html#classes"><p>Classes</p></a>
+                                </div>
+                                <div class="header-buttons">
+                                    <a href="https://upwork.com/freelancers/~01db0e64a7f90fbf11" target="_blank">
+                                        <div class="socials">
+                                            <svg width="30" height="19" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.2419 0C21.8884 0 19.4512 2.82283 18.7535 5.72895C17.9628 4.24816 17.3767 2.26753 16.9209 0.425771H10.9025V7.87609C10.9025 10.5786 9.6652 12.5778 7.24663 12.5778C4.82795 12.5778 3.44192 10.5786 3.44192 7.87609L3.46979 0.425771H0V7.87609C0 10.0511 0.707009 12.0225 2.00002 13.4292C3.33021 14.8823 5.14419 15.6411 7.24653 15.6411C11.4325 15.6411 14.3535 12.4481 14.3535 7.87609V2.86915C14.7907 4.51656 15.8325 7.68185 17.8233 10.4585L15.9628 21H19.4884L20.7162 13.5311C21.1163 13.8643 21.5442 14.1604 22 14.4289C23.1814 15.1693 24.5302 15.5858 25.9256 15.632C25.9256 15.632 26.1396 15.6412 26.2512 15.6412C30.5675 15.6412 34 12.3187 34 7.82997C34 3.34115 30.5582 0.000103446 26.2419 0.000103446M26.2419 12.5686C23.572 12.5686 21.8046 10.5139 21.3116 9.71795C21.9442 4.68317 23.7954 3.09133 26.2419 3.09133C28.6605 3.09133 30.5395 5.01639 30.5395 7.82997C30.5395 10.6434 28.6605 12.5686 26.2419 12.5686Z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a href="images/Andre-Lisboa.pdf" target="_blank">
+                                        <div class="socials">
+                                            <p>CV</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 footer-content">
-                        <div class="footer-links">
-                            <a href=".#hero" class="footer-link">About me</a>
-                            <a href=".#projects" class="footer-link">Projects</a>
-                            <a href=".#classes" class="footer-link">Classes</a>
-                        </div>
-                        <div class="footer-social">
-                            <button onclick="window.open('images/Andre-Lisboa.pdf', '_blank')" class="btn-secondary btn-hyperion" data-text="Download my CV">
-                                <span>Download my CV</span>
-                            </button>
+                </header>
+                <section class="hero-project">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <div class="project-details">
+                                    <h2><span class="text-brand">Blizt</span></h2>                                        
+                                    <!-- Tags / Chips -->
+                                    <div class="chips">
+                                        <span class="chip"><img src="images/chip-mobile.svg" alt=""> Mobile app</span>
+                                        <span class="chip"><img src="images/chip-admin.svg" alt=""> Admin web</span>
+                                        <span class="chip"><img src="images/chip-logo.svg" alt=""> Logo design</span>
+                                    </div>
+
+                                    <!-- Info Principal -->
+                                    <div class="project-info">
+                                        <div class="project-meta">
+                                            <img src="images/flag-usa.svg" alt="USA">
+                                            <p>• 2026</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="project-image blizt-image project-hero-image-blizt">
+                                            <img src="images/logo-blizt.png" alt="Blizt Logo" class="project-logo">
+                                            <img src="images/screens-blizt.png" alt="Blizt Screens" class="project-screens">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>Blizt is a social network for polls. Users can publish open or pre-formatted polls to get fast feedback from the community, as well as share their opinions on various polls across their feed.</p>
+                            </div>
+                            <div class="col-12">
+                                <a href="https://upwork.com/freelancers/~01db0e64a7f90fbf11" target="_blank">
+                                    <button class="button button-primary">View on Upwork</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="section made-with-love">
-            <div class="container">
-                <div class="grid">
-                    <div class="col-12">
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3>User<span class="text-brand"> Personas</span></h3>
+                            </div>
+                            <div class="col-6 persona-container">
+                                <div class="persona-container-top">
+                                    <img src="images/persona-1.svg">
+                                    <div class="persona-container-title">
+                                        <h4>Alex, 24</h4>
+                                        <p class="persona-description">The Casual Voter Looking for Quick Interaction</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Alex uses social apps mainly during short breaks throughout the day. He prefers lightweight interactions instead of creating long-form content. Blizt allows him to participate instantly by voting on polls, discovering opinions, and feeling part of conversations without needing to post frequently.
+                                </p>
+                            </div>
+                            <div class="col-6 persona-container">
+                                <div class="persona-container-top">
+                                    <img src="images/persona-2.svg">
+                                    <div class="persona-container-title">
+                                        <h4>Maya, 29</h4>
+                                        <p class="persona-description">The Social Fan and Content Viewer</p>
+                                    </div>
+                                </div>
+                                <p>                                    
+                                    Maya enjoys sharing opinions and starting conversations online. Instead of traditional posts, she prefers interactive formats that generate immediate feedback. Blizt gives her a fast way to publish polls and view people responses in real time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3>High <span class="text-brand">fidelities</span></h3>
+                            </div>
+                            <!-- Hi fidelity 1 -->
+                            <div class="col-12 persona-container">
+                                <div class="project-container project-container-rns">
+                                    <img src="images/blizt/blizt-hifi-1.png">
+                                </div>
+                                <h4>Authentication</h4>
+                                <p>
+                                    Users log in with their email and password to access the poll feed directly. Alternatively, they can sign up by providing their name, username, date of birth, email, and password.
+                                </p>
+                            </div>
+                            <!-- Hi fidelity 2 -->
+                            <div class="col-12 persona-container">
+                                <div class="project-container project-container-rns">
+                                    <img src="images/blizt/blizt-hifi-2.png">
+                                </div>
+                                <h4>Feed & Polls</h4>
+                                <p>
+                                    Users can view the poll feed and quickly vote by simply clicking the image of their preferred option. Upon voting, the details and results for each option are revealed.
+
+                                </p>
+                            </div>
+                            <!-- Hi fidelity 3 -->
+                            <div class="col-12 persona-container">
+                                <div class="project-container project-container-rns">
+                                    <img src="images/blizt/blizt-hifi-3.png">
+                                </div>
+                                <h4>Create poll</h4>
+                                <p>
+                                    Users can create polls via the bottom navigation bar. They can select available presets and include images, as well as set the question, category, and options..
+
+                                </p>
+                            </div>
+                            <!-- Hi fidelity 4 -->
+                            <div class="col-12 persona-container">
+                                <div class="project-container project-container-rns">
+                                    <img src="images/blizt/blizt-hifi-4.png">
+                                </div>
+                                <h4>Admin web</h4>
+                                <p>
+                                    Through the web admin dashboard, moderators can perform platform actions. It enables them to manage users, moderate content, access audit logs, and analyze app usage analytics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3><span class="text-brand">Branding </span>assets</h3>
+                            </div>
+                            <!-- Branding item -->
+                            <div class="col-12 persona-container">
+                                <div class="branding-container project-container-rns">
+                                    <img src="images/blizt/blizt-branding-1.svg">
+                                </div>
+                            </div>
+                            <!-- Branding item -->
+                            <div class="col-12 persona-container">
+                                <div class="branding-container project-container-rns">
+                                    <img src="images/blizt/blizt-branding-2.png">
+                                </div>
+                            </div>
+                            <!-- Branding item -->
+                            <div class="col-12 persona-container">
+                                <div class="branding-container project-container-rns">
+                                    <img src="images/blizt/blizt-branding-3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3>Non functional <span class="text-brand">prototype</span></h3>
+                            </div>
+                            <!-- Branding item -->
+                            <div class="col-12 persona-container">
+                                <div class="prototype-container project-container-rns">
+                                    <iframe class="iframe" src="https://embed.figma.com/proto/wLKanE82f78ptLUwEzHNxk/Dizzr?node-id=18563-31328&viewport=3432%2C-7031%2C0.24&scaling=scale-down&content-scaling=fixed&starting-point-node-id=18563%3A31330&page-id=1%3A95&embed-host=share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="projects" id="projects">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3>Other <span class="text-brand">projects</span></h3>
+                            </div>
+                           <!-- Card de Projeto 1 -->
+                            <div class="col-12">
+                                <article class="project-box">
+                                    
+                                    <!-- 1. Imagem Clicável -->
+                                    <a href="rns.html" class="project-image-link">
+                                        <div class="project-image rns-image">
+                                            <img src="images/logo-rns.png" alt="Rise Nation Sports Logo" class="project-logo">
+                                            <img src="images/screens-rns.png" alt="Rise Nation Sports Screens" class="project-screens">
+                                        </div>
+                                    </a>
+
+                                    <!-- Detalhes do Projeto (Não Clicável) -->
+                                    <div class="project-details">
+                                        
+                                        <!-- Tags / Chips -->
+                                        <div class="chips">
+                                            <span class="chip"><img src="images/chip-mobile.svg" alt=""> Mobile app</span>
+                                            <span class="chip"><img src="images/chip-admin.svg" alt=""> Admin web</span>
+                                            <span class="chip"><img src="images/chip-logo.svg" alt=""> Logo design</span>
+                                        </div>
+
+                                        <!-- Info Principal -->
+                                        <div class="project-info">
+                                            <h3 class="project-title">RISE NATION SPORTS</h3>
+                                            <div class="project-meta">
+                                                <img src="images/flag-usa.svg" alt="USA">
+                                                <p>• 2026</p>
+                                            </div>
+                                            <p class="project-description">
+                                                Designing a real time experience for players and fans to discover, follow and compete in local sports events.
+                                            </p>
+                                        </div>
+
+                                        <!-- 2. Botão de Ação Clicável -->
+                                        <a href="rns.html" class="btn-arrow" aria-label="View project">
+                                            <img src="images/arrow.svg" alt="">
+                                        </a>
+
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Card de Projeto 2 -->
+                            <div class="col-12">
+                                <article class="project-box">
+                                    
+                                    <!-- 1. Imagem Clicável -->
+                                    <a href="care.html" class="project-image-link">
+                                        <div class="project-image care-image">
+                                           <!--   <img src="images/logo-care.png" alt="Care & Share Logo" class="care-logo"> -->
+                                            <img src="images/screens-care.png" alt="Care & Share Screens" class="care-screens">
+                                        </div>
+                                    </a>
+
+                                    <!-- Detalhes do Projeto (Não Clicável) -->
+                                    <div class="project-details">
+                                        
+                                        <!-- Tags / Chips -->
+                                        <div class="chips">
+                                            <span class="chip"><img src="images/chip-mobile.svg" alt=""> Mobile app</span>
+                                        </div>
+
+                                        <!-- Info Principal -->
+                                        <div class="project-info">
+                                            <h3 class="project-title">Care & Share</h3>
+                                            <div class="project-meta">
+                                                <img src="images/flag-usa.svg" alt="USA">
+                                                <p>• 2026</p>
+                                            </div>
+                                            <p class="project-description">
+                                                Designing a care platform for logging daily activities and managing well-being for dependents.
+                                            </p>
+                                        </div>
+
+                                        <!-- 2. Botão de Ação Clicável -->
+                                        <a href="care.html" class="btn-arrow" aria-label="View project">
+                                            <img src="images/arrow.svg" alt="">
+                                        </a>
+
+                                    </div>
+                                </article>
+                            </div>                            
+                        </div>
+                    </div>    
+                </section>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="grid grid-footer">
+                            <div class="col-12">
+                                <a href="index.html">
+                                    <div class="logo-wrapper logo-wrapper-footer">
+                                        <img src="images/logo-circle.svg" alt="" class="logo-circle">
+                                        <img src="images/logo-center.svg" alt="AL Logo" class="logo-center">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 header-container">
+                                <div class="header-links">                                    
+                                    <a href="index.html#projects"><p>Projects</p></a>
+                                    <a href="index.html#about"><p>About me</p></a>
+                                    <a href="index.html#classes"><p>Classes</p></a>
+                                </div>
+                                <div class="header-buttons">
+                                    <a href="https://upwork.com/freelancers/~01db0e64a7f90fbf11" target="_blank">
+                                        <div class="socials">
+                                            <svg width="30" height="19" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.2419 0C21.8884 0 19.4512 2.82283 18.7535 5.72895C17.9628 4.24816 17.3767 2.26753 16.9209 0.425771H10.9025V7.87609C10.9025 10.5786 9.6652 12.5778 7.24663 12.5778C4.82795 12.5778 3.44192 10.5786 3.44192 7.87609L3.46979 0.425771H0V7.87609C0 10.0511 0.707009 12.0225 2.00002 13.4292C3.33021 14.8823 5.14419 15.6411 7.24653 15.6411C11.4325 15.6411 14.3535 12.4481 14.3535 7.87609V2.86915C14.7907 4.51656 15.8325 7.68185 17.8233 10.4585L15.9628 21H19.4884L20.7162 13.5311C21.1163 13.8643 21.5442 14.1604 22 14.4289C23.1814 15.1693 24.5302 15.5858 25.9256 15.632C25.9256 15.632 26.1396 15.6412 26.2512 15.6412C30.5675 15.6412 34 12.3187 34 7.82997C34 3.34115 30.5582 0.000103446 26.2419 0.000103446M26.2419 12.5686C23.572 12.5686 21.8046 10.5139 21.3116 9.71795C21.9442 4.68317 23.7954 3.09133 26.2419 3.09133C28.6605 3.09133 30.5395 5.01639 30.5395 7.82997C30.5395 10.6434 28.6605 12.5686 26.2419 12.5686Z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a href="images/Andre-Lisboa.pdf" target="_blank">
+                                        <div class="socials">
+                                            <p>CV</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="made-by">
                         <p>Made by André Lisboa</p>
                     </div>
-                    <div class="col-12 footer-content">
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <script src="js/hover-effect.js"></script>
-  </body>
+                </footer>
+            </main>
+        </div>
+    </body>
 </html>
