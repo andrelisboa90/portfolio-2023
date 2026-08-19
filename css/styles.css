@@ -261,12 +261,12 @@ h4{
   }
 }
 ::selection {
-  background-color: var(--background-rns-color);
-  color: var(--background-color);
+  background-color: var(--text-color);
+  color: var(--border-color);
 }
 ::-moz-selection { /* Suporte para navegadores antigos/Firefox */
-  background-color: var(--background-rns-color);
-  color: var(--background-color);
+  background-color: var(--text-color);
+  color: var(--border-color);
 }
 
 .header-container{
