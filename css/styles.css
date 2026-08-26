@@ -282,30 +282,9 @@ header.is-sticky .header {
 .offset-10 { grid-column-start: 11; }
 .offset-11 { grid-column-start: 12; }
 
-@media (max-width: 980px) {
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12,
-  .offset-1,
-  .offset-2,
-  .offset-3,
-  .offset-4,
-  .offset-5,
-  .offset-6,
-  .offset-7,
-  .offset-8,
-  .offset-9,
-  .offset-10,
-  .offset-11 {
+@media (max-width: 860px) {
+  [class*="col-"],
+  [class*="offset-"] {
     grid-column: 1 / -1;
   }
 }
