@@ -732,6 +732,9 @@ header.is-sticky .header {
     p{
         zoom: 0.8;
     }
+    .button p {
+        zoom: 1;
+    }
     .button-card{
         display: none;
     }
