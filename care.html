@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5K77F14J40"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-5K77F14J40');
-        </script>
         <!-- ... outras tags ... -->
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -21,13 +12,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="André Lisboa UI/UX Design"/>
-        <meta name="keywords" content="portfolio, ui ux, design, branding"/>
+        <meta name="description" content="Portfolio pessoal com foco em design digital, experiência de usuário e desenvolvimento front-end."/>
+        <meta name="keywords" content="portfolio, ui ux, design, front-end, desenvolvimento, branding"/>
         <meta name="theme-color" content="#151419" />
-        <title>André Lisboa</title>
+        <title>Portfolio 2026</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+         <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="css/styles.css" />
         <meta property="og:title" content="André Lisboa" />
         <meta property="og:description" content="UI/UX Design" />
@@ -41,343 +33,348 @@
         <meta name="author" content="André Lisboa" />
         <link rel="shortcut icon" href="favicon.ico">
     </head>
-    <body>
+    <body class="is-loading">
+        <div class="page-loader" id="page-loader" aria-live="polite" aria-label="Carregando página">
+            <div class="logo-wrapper logo-loader">
+                <img src="images/logo-circle.svg" alt="" class="logo-circle">
+                <img src="images/logo-center.svg" alt="AL Logo" class="logo-center">
+            </div>
+        </div>
+
         <div class="page-shell">
             <main>
-                <header class="header">
-                    <div class="container">
-                        <div class="grid">
-                            <div class="col-12 header-container">
-                                <a href="index.html">
-                                    <div class="logo-wrapper">
-                                        <img src="images/logo-circle.svg" alt="" class="logo-circle">
-                                        <img src="images/logo-center.svg" alt="AL Logo" class="logo-center">
-                                    </div>
-                                </a>
-                                <div class="header-links links-top">                                    
-                                    <a href="index.html#projects"><p>Projects</p></a>
-                                    <a href="index.html#about"><p>About me</p></a>
-                                    <a href="index.html#classes"><p>Classes</p></a>
+                <header>
+                    <div class="header section section-bg-secondary">
+                        <div class="container container-small">
+                            <div class="grid hero-animate hero-header">
+                                <div class="col-4 header-left">                                    
+                                    <a href="index.html" class="header-back">
+                                        <img src="images/arrow-back.svg">
+                                        <p>Back</p>
+                                    </a>
                                 </div>
-                                <div class="header-buttons">
-                                    <a href="https://upwork.com/freelancers/~01db0e64a7f90fbf11" target="_blank">
-                                        <div class="socials">
-                                            <svg width="30" height="19" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M26.2419 0C21.8884 0 19.4512 2.82283 18.7535 5.72895C17.9628 4.24816 17.3767 2.26753 16.9209 0.425771H10.9025V7.87609C10.9025 10.5786 9.6652 12.5778 7.24663 12.5778C4.82795 12.5778 3.44192 10.5786 3.44192 7.87609L3.46979 0.425771H0V7.87609C0 10.0511 0.707009 12.0225 2.00002 13.4292C3.33021 14.8823 5.14419 15.6411 7.24653 15.6411C11.4325 15.6411 14.3535 12.4481 14.3535 7.87609V2.86915C14.7907 4.51656 15.8325 7.68185 17.8233 10.4585L15.9628 21H19.4884L20.7162 13.5311C21.1163 13.8643 21.5442 14.1604 22 14.4289C23.1814 15.1693 24.5302 15.5858 25.9256 15.632C25.9256 15.632 26.1396 15.6412 26.2512 15.6412C30.5675 15.6412 34 12.3187 34 7.82997C34 3.34115 30.5582 0.000103446 26.2419 0.000103446M26.2419 12.5686C23.572 12.5686 21.8046 10.5139 21.3116 9.71795C21.9442 4.68317 23.7954 3.09133 26.2419 3.09133C28.6605 3.09133 30.5395 5.01639 30.5395 7.82997C30.5395 10.6434 28.6605 12.5686 26.2419 12.5686Z"/>
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <a href="images/Andre-Lisboa.pdf" target="_blank">
-                                        <div class="socials">
-                                            <p>CV</p>
-                                        </div>
-                                    </a>
+                                <div class="col-4 header-title">
+                                    <p><strong>You Care</strong></p>
+                                </div>
+                                <div class="col-4">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </header>
-                <section class="hero-project">
+                <section class="hero section section-bg-primary" id="hero">
                     <div class="container">
                         <div class="grid">
                             <div class="col-12">
-                                <div class="project-details">
-                                    <h2><span class="text-brand">You Care</span></h2>                                        
-                                    <!-- Tags / Chips -->
-                                    <div class="chips">
-                                        <span class="chip"><img src="images/chip-mobile.svg" alt=""> Mobile app</span>
-                                        <span class="chip"><img src="images/chip-admin.svg" alt=""> Admin web</span>
-                                        <span class="chip"><img src="images/chip-logo.svg" alt=""> Logo design</span>
+                                <h2 class="hero-animate hero-delay-1">You <span class="text-brand">Care</span></h2>
+                                <div class="chips hero-animate hero-delay-2">
+                                    <div class="chip">
+                                        <img src="images/chip-mobile.svg">
+                                        <p class="chip-text">Mobile app</p>
                                     </div>
-
-                                    <!-- Info Principal -->
-                                    <div class="project-info">
-                                        <div class="project-meta">
-                                            <img src="images/flag-usa.svg" alt="USA">
-                                            <p>• 2026</p>
-                                        </div>
+                                    <p>•</p>
+                                    <div class="chip">
+                                        <img src="images/chip-logo.svg">
+                                        <p class="chip-text">Logo design</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="project-image care-image project-hero-image-care">
-                                            <img src="images/screens-care.png" alt="Care & Share Screens" class="care-screens">
-                                            <img src="images/logo-care-mobile.svg" alt="YouCare Logo" class="care-logo-mobile">
-                                        </div>
-                            </div>
-                            <div class="col-12">
-                                <p>You Care is a third-party caregiving app that allows users to log a person's daily care routines. These care activities are displayed as a feed on the home screen, providing a complete history of all the care received.
+                                <p class="hero-animate hero-delay-3">
+                                    You Care is a third-party caregiving app that allows users to log a person's daily care routines. These care activities are displayed as a feed on the home screen, providing a complete history of all the care received.
                                     <br><br>
-                                Through the app, caregivers can manage care for individuals with special needs and export detailed PDF reports to share.</p>
+                                    Through the app, caregivers can manage care for individuals with special needs and export detailed PDF reports to share.
+                                </p>
                             </div>
+                            <div class="col-12 hero-animate hero-delay-4">
+                                <img src="images/project-care.png">
+                            </div>
+                            <div class="col-12 scroll-animate">
+                                <a href="https://www.upwork.com/freelancers/~01db0e64a7f90fbf11?p=2089355366554918912" target="_blank" class="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- O ícone interno (letra/logo) herda a cor do CSS do container pai -->
+                                        <path d="M17.4541 9.04688C18.8768 9.04693 19.9824 10.1472 19.9824 11.7549C19.9823 13.3623 18.8767 14.4619 17.4541 14.4619C15.8836 14.4619 14.8437 13.2878 14.5537 12.833C14.9259 9.95628 16.015 9.04688 17.4541 9.04688Z" fill="currentColor"/>
+                                        
+                                        <!-- O círculo externo herda a cor do CSS do container pai -->
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.6272 0.000263879 24 5.37275 24 12C24 18.6273 18.6272 23.9997 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM17.4541 7.28027C14.8933 7.28027 13.4593 8.89314 13.0488 10.5537C12.5838 9.70758 12.2388 8.57575 11.9707 7.52344H8.43066V11.7812C8.43055 13.3254 7.70285 14.4678 6.28027 14.4678C4.85765 14.4678 4.04212 13.3254 4.04199 11.7812L4.05859 7.52344H2.01758V11.7812C2.01766 13.024 2.43381 14.1503 3.19434 14.9541C3.97679 15.7844 5.04367 16.2178 6.28027 16.2178C8.74248 16.2178 10.4432 14.3936 10.4609 11.7812V8.91992C10.7181 9.86134 11.331 11.6703 12.502 13.2568L11.4072 19.2803H13.4814L14.2031 15.0127C14.4385 15.0127 14.6909 15.372 14.959 15.5254C15.6538 15.9483 16.447 16.1864 17.2676 16.2129C17.2676 16.2129 17.3932 16.2177 17.459 16.2178C19.9979 16.2178 22.0174 14.3197 22.0176 11.7549C22.0176 9.18988 19.993 7.28033 17.4541 7.28027Z" fill="currentColor"/>
+                                    </svg>
+                                    <p>View on Upwork</p>
+                                </a>
+                            </div>                         
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-bg-tertiary" id="personas">
+                    <div class="container">
+                        <div class="grid">
                             <div class="col-12">
-                                <a href="https://www.upwork.com/freelancers/~01db0e64a7f90fbf11?p=2089355366554918912" target="_blank">
-                                    <button class="button button-primary">View on Upwork</button>
+                                <h3 class=" scroll-animate">User <span class="text-brand">personas</span></h3>
+                            </div>
+                            <div class="col-6 testimonial scroll-animate scroll-delay-2">
+                                <div class="testimonial-avatar">
+                                    <img src="images/persona-2.svg">
+                                    <div class="testimonial-avatar-title">
+                                        <h5>Anna Williams, 42</h5>
+                                        <p class="chip-text">Licensed professional caregiver</p>
+                                    </div>
+                                </div>
+                                <p>
+                                   Anna works independently, supporting multiple elderly clients. She needs to document care clearly, consistently, and professionally to maintain accurate records, support medical reviews, and protect herself legally.
+                                </p>
+                            </div>
+                            <div class="col-6 testimonial scroll-animate scroll-delay-1">
+                                <div class="testimonial-avatar">
+                                    <img src="images/persona-1.svg">
+                                    <div class="testimonial-avatar-title">
+                                        <h5>John Thompson, 29</h5>
+                                        <p class="chip-text">Social work assistant (volunteer)</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    John supports vulnerable adults through a community program. He needs to record objective observations while respecting privacy and working in environments with limited connectivity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-bg-secondary">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3 class="scroll-animate">High <span class="text-brand">fidelities</span></h3>
+                            </div>
+                            <!-- Card de Projeto 1 -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <article class="project-box project-box-internal">
+                                    <img src="images/care/care-hifi-1.png">
+                                    <div class="project-content">
+                                        <div class="project-text-internal">
+                                            <h4>Authentication</h4>
+                                            <p>
+                                                Users log in with their email and password to access the care feed directly. Alternatively, they can sign up by providing their name, email, and password.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Card de Projeto 1 -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <article class="project-box project-box-internal">
+                                    <img src="images/care/care-hifi-2.png">
+                                    <div class="project-content">
+                                        <div class="project-text-internal">
+                                            <h4>Care feed</h4>
+                                            <p>
+                                                Users can check the care feed right from the app's home screen. Additionally, they can view detailed information about the care recipient.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Card de Projeto 1 -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <article class="project-box project-box-internal">
+                                    <img src="images/care/care-hifi-3.png">
+                                    <div class="project-content">
+                                        <div class="project-text-internal">
+                                            <h4>Log care</h4>
+                                            <p>
+                                                Users can log care directly from the bottom navigation bar. They are presented with various care categories, each featuring tailored fields to complete.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Card de Projeto 1 -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <article class="project-box project-box-internal">
+                                    <img src="images/care/care-hifi-4.png">
+                                    <div class="project-content">
+                                        <div class="project-text-internal">
+                                            <h4>Dark mode</h4>
+                                            <p>
+                                                The app also offers a dark mode option, allowing users to choose the theme that best fits their preference.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-bg-primary">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3 class=" scroll-animate"><span class="text-brand">Branding </span>assets</h3>
+                            </div>
+                            <!-- Card de Projeto 1 -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <article class="project-box project-box-internal">
+                                    <img src="images/care/care-branding-1.png">
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-bg-secondary">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3 class=" scroll-animate">Non functional <span class="text-brand">prototype</span></h3>
+                            </div>
+                            <!-- Card de Projeto 1 -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <article class="project-box project-box-internal">
+                                    <iframe class="iframe" src="https://embed.figma.com/proto/QThwV6T7UJElIkHNOzSVNp/Carespondence?node-id=10506-5983&viewport=2816%2C941%2C0.11&scaling=scale-down&content-scaling=fixed&starting-point-node-id=10506%3A5988&page-id=1%3A95&embed-host=share" allowfullscreen></iframe>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-bg-tertiary section" id="projects">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col-12">
+                                <h3 class="scroll-animate">Other <span class="text-brand">projects</span></h3>
+                            </div>
+                          <!-- Card de Projeto -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <a href="rns.html">
+                                    <article class="project-box">
+                                        <div class="project-img-wrapper">                                    
+                                            <img src="images/project-rns.png"> 
+                                        </div>                                   
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <div class="chips">
+                                                    <div class="chip">
+                                                        <img src="images/chip-mobile.svg">
+                                                        <p class="chip-text">Mobile app</p>
+                                                    </div>
+                                                    <p>•</p>
+                                                    <div class="chip">
+                                                        <img src="images/chip-admin.svg">
+                                                        <p class="chip-text">Admin web</p>
+                                                    </div>
+                                                    <p>•</p>
+                                                    <div class="chip">
+                                                        <img src="images/chip-logo.svg">
+                                                        <p class="chip-text">Logo design</p>
+                                                    </div>
+                                                </div>
+                                                <h3>Rise Nation Sports</h3>
+                                                <p>
+                                                    Designing a real time experience for players and fans to discover, follow and compete in local sports events.
+                                                </p>
+                                            </div>
+                                            <div class="button button-card">
+                                                <svg width="24" height="24" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18.001 4.99512C18.5321 4.99512 19.0414 5.20647 19.417 5.58203L28.416 14.5811C28.6025 14.7671 28.7517 14.9881 28.8525 15.2314C28.9533 15.4747 29.0042 15.7357 29.0039 15.999C29.0036 16.2624 28.9519 16.5235 28.8506 16.7666C28.7495 17.0092 28.6004 17.2287 28.4141 17.4141L19.415 26.415C19.0395 26.7905 18.53 27.0019 17.999 27.002C17.468 27.002 16.9586 26.7905 16.583 26.415C16.2075 26.0395 15.9961 25.5301 15.9961 24.999C15.9961 24.4679 16.2074 23.9586 16.583 23.583L22.168 18H5C4.46957 18 3.96101 17.7891 3.58594 17.4141C3.21093 17.039 3 16.5304 3 16C3.00006 15.4696 3.21092 14.961 3.58594 14.5859C3.961 14.2109 4.46962 14 5 14H22.168L16.585 8.41406C16.2095 8.03858 15.9991 7.52905 15.999 6.99805C15.999 6.46707 16.2096 5.95756 16.585 5.58203C16.9605 5.20653 17.47 4.99519 18.001 4.99512Z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <!-- Card de Projeto -->
+                            <div class="col-12 scroll-animate scroll-delay-1">
+                                <a href="blizt.html">
+                                    <article class="project-box">
+                                        <div class="project-img-wrapper">                                    
+                                            <img src="images/project-blizt.png"> 
+                                        </div>                                   
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <div class="chips">
+                                                    <div class="chip">
+                                                        <img src="images/chip-mobile.svg">
+                                                        <p class="chip-text">Mobile app</p>
+                                                    </div>
+                                                    <p>•</p>
+                                                    <div class="chip">
+                                                        <img src="images/chip-admin.svg">
+                                                        <p class="chip-text">Admin web</p>
+                                                    </div>
+                                                    <p>•</p>
+                                                    <div class="chip">
+                                                        <img src="images/chip-logo.svg">
+                                                        <p class="chip-text">Logo design</p>
+                                                    </div>
+                                                </div>
+                                                <h3>Blizt</h3>
+                                                <p>
+                                                    Designing a social polling app designed to help users ask questions, vote, and make collective decisions.
+                                                </p>
+                                            </div>
+                                            <div class="button button-card">
+                                                <svg width="24" height="24" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18.001 4.99512C18.5321 4.99512 19.0414 5.20647 19.417 5.58203L28.416 14.5811C28.6025 14.7671 28.7517 14.9881 28.8525 15.2314C28.9533 15.4747 29.0042 15.7357 29.0039 15.999C29.0036 16.2624 28.9519 16.5235 28.8506 16.7666C28.7495 17.0092 28.6004 17.2287 28.4141 17.4141L19.415 26.415C19.0395 26.7905 18.53 27.0019 17.999 27.002C17.468 27.002 16.9586 26.7905 16.583 26.415C16.2075 26.0395 15.9961 25.5301 15.9961 24.999C15.9961 24.4679 16.2074 23.9586 16.583 23.583L22.168 18H5C4.46957 18 3.96101 17.7891 3.58594 17.4141C3.21093 17.039 3 16.5304 3 16C3.00006 15.4696 3.21092 14.961 3.58594 14.5859C3.961 14.2109 4.46962 14 5 14H22.168L16.585 8.41406C16.2095 8.03858 15.9991 7.52905 15.999 6.99805C15.999 6.46707 16.2096 5.95756 16.585 5.58203C16.9605 5.20653 17.47 4.99519 18.001 4.99512Z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </article>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section>
-                    <div class="container">
-                        <div class="grid">
-                            <div class="col-12">
-                                <h3>User<span class="text-brand"> Personas</span></h3>
-                            </div>
-                            <div class="col-6 persona-container">
-                                <div class="persona-container-top">
-                                    <img src="images/persona-2.svg">
-                                    <div class="persona-container-title">
-                                        <h4>Anna Williams, 42</h4>
-                                        <p class="persona-description">Licensed professional caregiver</p>
-                                    </div>
+                </section>            
+                <footer>
+                    <div class="footer section section-bg-primary">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="col-12">
+                                    <h2 style="margin-bottom: 32px;" class="scroll-animate">Let’s build something <span class="text-brand">together</span></h2>
                                 </div>
-                                <p>
-                                    Anna works independently, supporting multiple elderly clients. She needs to document care clearly, consistently, and professionally to maintain accurate records, support medical reviews, and protect herself legally.
-                                </p>
-                            </div>
-                            <div class="col-6 persona-container">
-                                <div class="persona-container-top">
-                                    <img src="images/persona-1.svg">
-                                    <div class="persona-container-title">
-                                        <h4>John Thompson, 29</h4>
-                                        <p class="persona-description">Social work assistant (volunteer)</p>
-                                    </div>
-                                </div>
-                                <p>                                    
-                                   John supports vulnerable adults through a community program. He needs to record objective observations while respecting privacy and working in environments with limited connectivity.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="container">
-                        <div class="grid">
-                            <div class="col-12">
-                                <h3>High <span class="text-brand">fidelities</span></h3>
-                            </div>
-                            <!-- Hi fidelity 1 -->
-                            <div class="col-12 persona-container">
-                                <div class="project-container project-container-rns">
-                                    <img src="images/care/care-hifi-1.png" class="image-container">
-                                </div>
-                                <h4>Authentication</h4>
-                                <p>
-                                    Users log in with their email and password to access the care feed directly. Alternatively, they can sign up by providing their name, email, and password.
-                                </p>
-                            </div>
-                            <!-- Hi fidelity 2 -->
-                            <div class="col-12 persona-container">
-                                <div class="project-container project-container-rns">
-                                    <img src="images/care/care-hifi-2.png" class="image-container">
-                                </div>
-                                <h4>Care feed</h4>
-                                <p>
-                                    Users can check the care feed right from the app's home screen. Additionally, they can view detailed information about the care recipient.
-
-                                </p>
-                            </div>
-                            <!-- Hi fidelity 3 -->
-                            <div class="col-12 persona-container">
-                                <div class="project-container project-container-rns">
-                                    <img src="images/care/care-hifi-3.png" class="image-container">
-                                </div>
-                                <h4>Log care</h4>
-                                <p>
-                                    Users can log care directly from the bottom navigation bar. They are presented with various care categories, each featuring tailored fields to complete.
-
-                                </p>
-                            </div>
-                            <!-- Hi fidelity 4 -->
-                            <div class="col-12 persona-container">
-                                <div class="project-container project-container-rns">
-                                    <img src="images/care/care-hifi-4.png" class="image-container">
-                                </div>
-                                <h4>Dark mode</h4>
-                                <p>
-                                    The app also offers a dark mode option, allowing users to choose the theme that best fits their preference.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <section>
-                    <div class="container">
-                        <div class="grid">
-                            <div class="col-12">
-                                <h3><span class="text-brand">Branding </span>assets</h3>
-                            </div>
-                            <!-- Branding item -->
-                            <div class="col-12 persona-container">
-                                <div class="branding-container project-container-rns">
-                                    <img src="images/care/care-branding-1.svg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                    <div class="container">
-                        <div class="grid">
-                            <div class="col-12">
-                                <h3>Non functional <span class="text-brand">prototype</span></h3>
-                            </div>
-                            <!-- Branding item -->
-                            <div class="col-12 persona-container">
-                                <div class="prototype-container project-container-rns">
-                                    <iframe class="iframe" src="https://embed.figma.com/proto/QThwV6T7UJElIkHNOzSVNp/Carespondence?node-id=10506-5983&viewport=2816%2C941%2C0.11&scaling=scale-down&content-scaling=fixed&starting-point-node-id=10506%3A5988&page-id=1%3A95&embed-host=share" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="projects" id="projects">
-                    <div class="container">
-                        <div class="grid">
-                            <div class="col-12">
-                                <h3>Other <span class="text-brand">projects</span></h3>
-                            </div>
-                           <!-- Card de Projeto 1 -->
-                            <div class="col-12">
-                                <article class="project-box">
-                                    
-                                    <!-- 1. Imagem Clicável -->
-                                    <a href="rns.html" class="project-image-link">
-                                        <div class="project-image rns-image">
-                                            <img src="images/logo-rns.png" alt="Rise Nation Sports Logo" class="project-logo">
-                                            <img src="images/screens-rns.png" alt="Rise Nation Sports Screens" class="project-screens">
-                                        </div>
-                                    </a>
-
-                                    <!-- Detalhes do Projeto (Não Clicável) -->
-                                    <div class="project-details">
-                                        
-                                        <!-- Tags / Chips -->
-                                        <div class="chips">
-                                            <span class="chip"><img src="images/chip-mobile.svg" alt=""> Mobile app</span>
-                                            <span class="chip"><img src="images/chip-admin.svg" alt=""> Admin web</span>
-                                            <span class="chip"><img src="images/chip-logo.svg" alt=""> Logo design</span>
-                                        </div>
-
-                                        <!-- Info Principal -->
-                                        <div class="project-info">
-                                            <h3 class="project-title">RISE NATION SPORTS</h3>
-                                            <div class="project-meta">
-                                                <img src="images/flag-usa.svg" alt="USA">
-                                                <p>• 2026</p>
-                                            </div>
-                                            <p class="project-description">
-                                                Designing a real time experience for players and fans to discover, follow and compete in local sports events.
-                                            </p>
-                                        </div>
-
-                                        <!-- 2. Botão de Ação Clicável -->
-                                        <a href="rns.html" class="btn-arrow" aria-label="View project">
-                                            <img src="images/arrow.svg" alt="">
-                                        </a>
-
-                                    </div>
-                                </article>
-                            </div> 
-                            <!-- Card de Projeto 3 -->
-                            <div class="col-12">
-                                <article class="project-box">
-                                    
-                                    <!-- 1. Imagem Clicável -->
-                                    <a href="blizt.html" class="project-image-link">
-                                        <div class="project-image blizt-image">
-                                            <img src="images/logo-blizt.png" alt="Blizt Logo" class="project-logo">
-                                            <img src="images/screens-blizt.png" alt="Blizt Sports Screens" class="project-screens">
-                                        </div>
-                                    </a>
-
-                                    <!-- Detalhes do Projeto (Não Clicável) -->
-                                    <div class="project-details">
-                                        
-                                        <!-- Tags / Chips -->
-                                        <div class="chips">
-                                            <span class="chip"><img src="images/chip-mobile.svg" alt=""> Mobile app</span>
-                                            <span class="chip"><img src="images/chip-admin.svg" alt=""> Admin web</span>
-                                            <span class="chip"><img src="images/chip-logo.svg" alt=""> Logo design</span>
-                                        </div>
-
-                                        <!-- Info Principal -->
-                                        <div class="project-info">
-                                            <h3 class="project-title">Blizt</h3>
-                                            <div class="project-meta">
-                                                <img src="images/flag-usa.svg" alt="USA">
-                                                <p>• 2026</p>
-                                            </div>
-                                            <p class="project-description">
-                                                Designing a social polling app designed to help users ask questions, vote, and make collective decisions.
-                                            </p>
-                                        </div>
-
-                                        <!-- 2. Botão de Ação Clicável -->
-                                        <a href="rns.html" class="btn-arrow" aria-label="View project">
-                                            <img src="images/arrow.svg" alt="">
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>                             
-                        </div>
-                    </div>    
-                </section>
-                <footer class="footer">
-                    <div class="container">
-                        <div class="grid grid-footer">
-                            <div class="col-12">
-                                <a href="index.html">
-                                    <div class="logo-wrapper logo-wrapper-footer">
+                                <div class="col-8 footer-left">
+                                    <a href="index.html" class="logo-wrapper logo-wrapper logo-wrapper-footer scroll-animate">
                                         <img src="images/logo-circle.svg" alt="" class="logo-circle">
                                         <img src="images/logo-center.svg" alt="AL Logo" class="logo-center">
+                                    </a>
+                                    <div class="header-texts">
+                                        <h5 class=" scroll-animate scroll-delay-1">André Lisboa</h5>
+                                        <p class="logo-description scroll-animate scroll-delay-2">Senior UI/UX Designer</p>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-12 header-container footer-container">
-                                <div class="header-links links-footer">                                    
-                                    <a href="index.html#projects"><p>Projects</p></a>
-                                    <a href="index.html#about"><p>About me</p></a>
-                                    <a href="index.html#classes"><p>Classes</p></a>
                                 </div>
-                                <div class="header-buttons">
-                                    <a href="https://upwork.com/freelancers/~01db0e64a7f90fbf11" target="_blank">
-                                        <div class="socials">
-                                            <svg width="30" height="19" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M26.2419 0C21.8884 0 19.4512 2.82283 18.7535 5.72895C17.9628 4.24816 17.3767 2.26753 16.9209 0.425771H10.9025V7.87609C10.9025 10.5786 9.6652 12.5778 7.24663 12.5778C4.82795 12.5778 3.44192 10.5786 3.44192 7.87609L3.46979 0.425771H0V7.87609C0 10.0511 0.707009 12.0225 2.00002 13.4292C3.33021 14.8823 5.14419 15.6411 7.24653 15.6411C11.4325 15.6411 14.3535 12.4481 14.3535 7.87609V2.86915C14.7907 4.51656 15.8325 7.68185 17.8233 10.4585L15.9628 21H19.4884L20.7162 13.5311C21.1163 13.8643 21.5442 14.1604 22 14.4289C23.1814 15.1693 24.5302 15.5858 25.9256 15.632C25.9256 15.632 26.1396 15.6412 26.2512 15.6412C30.5675 15.6412 34 12.3187 34 7.82997C34 3.34115 30.5582 0.000103446 26.2419 0.000103446M26.2419 12.5686C23.572 12.5686 21.8046 10.5139 21.3116 9.71795C21.9442 4.68317 23.7954 3.09133 26.2419 3.09133C28.6605 3.09133 30.5395 5.01639 30.5395 7.82997C30.5395 10.6434 28.6605 12.5686 26.2419 12.5686Z"/>
-                                            </svg>
-                                        </div>
+                                <div class="col-4 buttons buttons-header">
+                                    <a href="https://www.upwork.com/freelancers/~01db0e64a7f90fbf11" target="_blank" class="button  scroll-animate">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <!-- O ícone interno (letra/logo) herda a cor do CSS do container pai -->
+                                            <path d="M17.4541 9.04688C18.8768 9.04693 19.9824 10.1472 19.9824 11.7549C19.9823 13.3623 18.8767 14.4619 17.4541 14.4619C15.8836 14.4619 14.8437 13.2878 14.5537 12.833C14.9259 9.95628 16.015 9.04688 17.4541 9.04688Z" fill="currentColor"/>
+                                            
+                                            <!-- O círculo externo herda a cor do CSS do container pai -->
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.6272 0.000263879 24 5.37275 24 12C24 18.6273 18.6272 23.9997 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM17.4541 7.28027C14.8933 7.28027 13.4593 8.89314 13.0488 10.5537C12.5838 9.70758 12.2388 8.57575 11.9707 7.52344H8.43066V11.7812C8.43055 13.3254 7.70285 14.4678 6.28027 14.4678C4.85765 14.4678 4.04212 13.3254 4.04199 11.7812L4.05859 7.52344H2.01758V11.7812C2.01766 13.024 2.43381 14.1503 3.19434 14.9541C3.97679 15.7844 5.04367 16.2178 6.28027 16.2178C8.74248 16.2178 10.4432 14.3936 10.4609 11.7812V8.91992C10.7181 9.86134 11.331 11.6703 12.502 13.2568L11.4072 19.2803H13.4814L14.2031 15.0127C14.4385 15.0127 14.6909 15.372 14.959 15.5254C15.6538 15.9483 16.447 16.1864 17.2676 16.2129C17.2676 16.2129 17.3932 16.2177 17.459 16.2178C19.9979 16.2178 22.0174 14.3197 22.0176 11.7549C22.0176 9.18988 19.993 7.28033 17.4541 7.28027Z" fill="currentColor"/>
+                                        </svg>
+                                        <p>My profile</p>
                                     </a>
-                                    <a href="images/Andre-Lisboa.pdf" target="_blank">
-                                        <div class="socials">
-                                            <p>CV</p>
-                                        </div>
+                                    <a href="images/Andre-Lisboa.pdf" target="_blank" class="button scroll-animate scroll-delay-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <!-- O ícone todo (círculo + letras "CV") herda a cor do CSS do elemento pai -->
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM8.91992 6C8.07737 6.00001 7.29361 6.14965 6.56836 6.44824C5.85374 6.73622 5.2296 7.14145 4.69629 7.66406C4.16308 8.18661 3.74689 8.80507 3.44824 9.51953C3.14962 10.2234 3.00005 10.9864 3 11.8076C3 12.629 3.14958 13.3976 3.44824 14.1123C3.7469 14.8162 4.16304 15.4345 4.69629 15.9678C5.24026 16.5011 5.86936 16.9172 6.58398 17.2158C7.30919 17.5038 8.09305 17.6484 8.93555 17.6484C9.85274 17.6484 10.6583 17.5037 11.3516 17.2158C12.0554 16.9279 12.6797 16.5334 13.2236 16.0322L11.5283 14.3359C11.219 14.6559 10.8505 14.9066 10.4238 15.0879C9.99718 15.2692 9.49587 15.3604 8.91992 15.3604C8.42929 15.3603 7.97555 15.2742 7.55957 15.1035C7.15446 14.9329 6.80244 14.693 6.50391 14.3838C6.21598 14.0745 5.98704 13.7009 5.81641 13.2637C5.65644 12.8264 5.57617 12.3409 5.57617 11.8076C5.57621 11.2851 5.65645 10.8054 5.81641 10.3682C5.98706 9.93086 6.21594 9.55737 6.50391 9.24805C6.80249 8.9388 7.15439 8.70394 7.55957 8.54395C7.97555 8.37329 8.42929 8.2881 8.91992 8.28809C9.47451 8.28809 9.96002 8.37829 10.376 8.55957C10.8025 8.74084 11.1653 8.99168 11.4639 9.31152L11.5781 9.19531L14.7676 17.4717H16.9277L21.3271 6.17578H18.6709L15.8672 13.7998L13.1035 6.17578H10.5078C10.0196 6.05907 9.49032 6 8.91992 6Z" fill="currentColor"/>
+                                        </svg>
+                                        <p>My CV</p>
                                     </a>
+                                </div>
+                                <div class="col-12 links links-footer scroll-animate">
+                                    <a href="index.html#projects">Projects</a>
+                                    <a href="index.html#about">About me</a>
+                                    <a href="index.html#classes">Classes</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="made-by">
-                        <p>Made by André Lisboa</p>
+                    <div class="section made-by">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="col-12">
+                                    <p> Made by André Lisboa</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </footer>
             </main>
         </div>
-        <script>
-            window.addEventListener('load', function () {
-                const loader = document.getElementById('page-loader');
-                const body = document.body;
-
-                if (!loader) return;
-
-                body.classList.remove('is-loading');
-                loader.classList.add('is-hidden');
-
-                setTimeout(function () {
-                    loader.remove();
-                }, 450);
-            });
-        </script>
+        <script src="js/preload.js"></script>        
+        <script src="js/sticky-header.js"></script>
+        <script src="js/animations.js"></script>
     </body>
 </html>
