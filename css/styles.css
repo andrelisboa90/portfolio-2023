@@ -777,6 +777,10 @@ header.is-sticky .header {
         justify-content: flex-start;
         margin-top: 16px;
     }
+    .about-img{
+        margin: 0 auto 32px auto;
+        width: 60%;
+    }
 }
 
 
