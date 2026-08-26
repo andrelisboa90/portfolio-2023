@@ -731,6 +731,19 @@ header.is-sticky .header {
     h1, h2, h3, h4{
         zoom:0.5;
     }
+    .stat-title{
+        zoom: 0.7;
+        margin-top: 8px;
+    }
+    .hero-line{
+        display: none;
+    }
+    .header-title{
+        margin: 0;
+    }
+    .header-back p{
+        display: none;
+    }
     p{
         zoom: 0.8;
     }
@@ -745,6 +758,9 @@ header.is-sticky .header {
     }
     .hero-header{
         display: flex;
+    }
+    .hero-logo{
+        display: none;
     }
     header{
         margin-top: 0;
@@ -767,9 +783,14 @@ header.is-sticky .header {
     }
     .links-footer{
         flex-direction: column;
+        align-items: flex-start;
     }
-    .logo-wrapper-footer{
-        margin: auto;
+    .footer-left{
+        margin: 0;
+    }
+    .buttons-header{
+        justify-content: flex-start;
+        margin-top: 16px;
     }
 }
 
