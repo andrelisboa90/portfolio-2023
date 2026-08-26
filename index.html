@@ -48,6 +48,9 @@
                         <div class="container container-small">
                             <div class="grid">
                                 <div class="col-12 links hero-animate hero-header">
+                                    <a href="#hero">
+                                        <img src="images/logo-center.svg" alt="AL Logo" style="width: 40px; height: 40px;">
+                                    </a>
                                         <a href="#projects">Projects</a>
                                         <a href="#about">About me</a>
                                         <a href="#classes">Classes</a>
@@ -96,12 +99,12 @@
                             </div>
                             <div class="col-3 stat">
                                 <h2 class="stat-title"><span class="stat-number">50</span><span class="stat-symbol">k</span></h2>
-                                <p>Students taught worldwide</p>
+                                <p id="projects">Students taught worldwide</p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="projects section section-bg-tertiary" id="projects">
+                <section class="projects section section-bg-tertiary">
                     <div class="container">
                         <div class="grid">
                             <div class="col-12">
@@ -210,7 +213,7 @@
                                                     Designing a social polling app designed to help users ask questions, vote, and make collective decisions.
                                                 </p>
                                             </div>
-                                            <div class="button button-card">
+                                            <div class="button button-card" id="about">
                                                 <svg width="24" height="24" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18.001 4.99512C18.5321 4.99512 19.0414 5.20647 19.417 5.58203L28.416 14.5811C28.6025 14.7671 28.7517 14.9881 28.8525 15.2314C28.9533 15.4747 29.0042 15.7357 29.0039 15.999C29.0036 16.2624 28.9519 16.5235 28.8506 16.7666C28.7495 17.0092 28.6004 17.2287 28.4141 17.4141L19.415 26.415C19.0395 26.7905 18.53 27.0019 17.999 27.002C17.468 27.002 16.9586 26.7905 16.583 26.415C16.2075 26.0395 15.9961 25.5301 15.9961 24.999C15.9961 24.4679 16.2074 23.9586 16.583 23.583L22.168 18H5C4.46957 18 3.96101 17.7891 3.58594 17.4141C3.21093 17.039 3 16.5304 3 16C3.00006 15.4696 3.21092 14.961 3.58594 14.5859C3.961 14.2109 4.46962 14 5 14H22.168L16.585 8.41406C16.2095 8.03858 15.9991 7.52905 15.999 6.99805C15.999 6.46707 16.2096 5.95756 16.585 5.58203C16.9605 5.20653 17.47 4.99519 18.001 4.99512Z"/>
                                                 </svg>
@@ -222,7 +225,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section-bg-primary section" id="about">
+                <section class="section-bg-primary section">
                     <div class="container">
                         <div class="grid">
                             <div class="col-4 scroll-animate">
@@ -246,7 +249,7 @@
                                         </svg>
                                         <p>My profile</p>
                                     </a>
-                                    <a href="images/Andre-Lisboa.pdf" target="_blank" class="button">
+                                    <a href="images/Andre-Lisboa.pdf" target="_blank" class="button" id="classes">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <!-- O ícone todo (círculo + letras "CV") herda a cor do CSS do elemento pai -->
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM8.91992 6C8.07737 6.00001 7.29361 6.14965 6.56836 6.44824C5.85374 6.73622 5.2296 7.14145 4.69629 7.66406C4.16308 8.18661 3.74689 8.80507 3.44824 9.51953C3.14962 10.2234 3.00005 10.9864 3 11.8076C3 12.629 3.14958 13.3976 3.44824 14.1123C3.7469 14.8162 4.16304 15.4345 4.69629 15.9678C5.24026 16.5011 5.86936 16.9172 6.58398 17.2158C7.30919 17.5038 8.09305 17.6484 8.93555 17.6484C9.85274 17.6484 10.6583 17.5037 11.3516 17.2158C12.0554 16.9279 12.6797 16.5334 13.2236 16.0322L11.5283 14.3359C11.219 14.6559 10.8505 14.9066 10.4238 15.0879C9.99718 15.2692 9.49587 15.3604 8.91992 15.3604C8.42929 15.3603 7.97555 15.2742 7.55957 15.1035C7.15446 14.9329 6.80244 14.693 6.50391 14.3838C6.21598 14.0745 5.98704 13.7009 5.81641 13.2637C5.65644 12.8264 5.57617 12.3409 5.57617 11.8076C5.57621 11.2851 5.65645 10.8054 5.81641 10.3682C5.98706 9.93086 6.21594 9.55737 6.50391 9.24805C6.80249 8.9388 7.15439 8.70394 7.55957 8.54395C7.97555 8.37329 8.42929 8.2881 8.91992 8.28809C9.47451 8.28809 9.96002 8.37829 10.376 8.55957C10.8025 8.74084 11.1653 8.99168 11.4639 9.31152L11.5781 9.19531L14.7676 17.4717H16.9277L21.3271 6.17578H18.6709L15.8672 13.7998L13.1035 6.17578H10.5078C10.0196 6.05907 9.49032 6 8.91992 6Z" fill="currentColor"/>
@@ -258,7 +261,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section section-bg-secondary" id="classes">
+                <section class="section section-bg-secondary">
                     <div class="container">
                         <div class="grid">
                             <div class="col-6 classes-title">
